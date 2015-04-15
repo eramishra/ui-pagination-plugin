@@ -1,0 +1,12 @@
+#target_page_index {
+  display: inline-block;
+  width: 45px;
+  padding: 2px 8px 3px;
+  text-align: center;
+  height: auto;
+  margin: 0 5px;
+}
+#next-page, #prev-page {
+  padding: 3px 10px 3px 7px;
+  margin: 0 5px;
+}

@@ -1,0 +1,15 @@
+<?php
+$this->mySession = new Zend_Session_Namespace("me");
+$currentUI = $this->mySession->display_new_interface;
+?>
+<div class="pagination-wrap">
+  <form id="pagination" method="POST" action="" >
+    <span>Page</span>
+    <input class="form-control" id="target_page_index" name="target_page_index" value="5" />
+    <span> of </span>
+    <span id="toatl_page_count">500</span>
+    <button class="hidden"  id="go_to_page" type="submit"></button>
+    <span class="btn btn-default paginator" id="prev_page" data-index="-1"><i class="fa fa-chevron-left"><?php if(!$currentUI) echo "&lt;"; ?></i></span>
+    <span class="btn btn-default paginator" id="next_page" data-index="1"><i class="fa fa-chevron-right"><?php if(!$currentUI) echo "&gt;"; ?></i></span>
+  </form>
+</div>
